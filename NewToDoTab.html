@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+
+		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<meta charset=utf-8 />
+		<title>NewToDoTab</title>
+	</head>
+	<body>
+	<div id="duplicateAlert">Task Already Exists</div>
+	<div id="FavToDoTasks">
+
+		<div id="tabs" >
+			<ul id="tab">
+				<li>
+					<a href="#tabs-1">Tasks</a>
+
+				</li>
+				<li>
+					<a href="#tabs-2">Favorites</a>
+
+				</li>
+			</ul>
+			<div id="tabs-1">
+				<h2>Tasks ToDo:</h2>
+
+				<div id="checkListForm">
+					<input id="txt" type="text" name="checkListItem" />
+					<div id="button" class="disabled">
+					Add Task!
+				</div>
+				</div>
+				
+				<br/>
+				<div id="list" style="color:blue">
+					<ul id="listItems"></ul>
+				</div>
+			</div>
+			<div id="tabs-2">
+				<h2>
+					Favorite Tasks:
+				</h2>
+				<div id="list2" style="color:blue">
+					<ul id="listItems2"></ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer>
+			by: <a id="author" href="https://twitter.com/exexzian" target="_blank">exexzian</a> 
+		</footer>
+
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/jquery-ui.min.js"></script>
+		<script src="js/todo.js"></script>
+
+	</body>
+</html>
